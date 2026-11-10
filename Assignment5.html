@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Registration Form
+        </title>
+    </head>
+    <h1  style="text-align: center;">Registration Form</h1>
+    <h2> To apply MNC company</h2>
+
+       <!--Fieldset and Legend-->
+
+       <fieldset>
+        <legend>Personal Information</legend>
+       
+
+    <form action="">
+        <label for="Fname">First Name</label>
+        <input type="text" id="Fname" name="Fname" required><br><br>
+        <label for="Lname">Last Name</label>
+        <input type="text" id="Lname" name="Lname" required><br><br>
+
+        <label for="Address"> Current Location</label>
+        <input type="text" id="Address" name="Address" required> <br><br>
+
+        <!--email input-->
+
+        <label for="email"> Email</label>
+        <input type="email" id="email" name="email" required> <br> <br>
+
+        <!--password input-->
+
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" required><br><br>
+
+        <!--date-->
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob"><br><br>
+
+         <!--Radio buttons-->
+
+        <label> Gender</label><br>
+        <input type="radio" name=" Gender" id="male" value="male">
+        <label for="male">male</label><br><br>
+        <input type="radio" name=" Gender" id="female" value="female">
+        <label for="female"> female</label> <br><br>
+
+        </fieldset> <br><br>
+
+        <fieldset>
+            <legend>Other Information</legend>
+        
+
+        <!--time type-->
+        
+        <label for="time"> Appointment time:</label>
+        <input type="time" name="time" id="time"><br><br>
+       
+
+
+        <!--select dropdown-->
+
+        <label for="Country">Country</label>
+        <select name="country" id="country" size="4">
+            <option value="india">India</option>
+            <option value="china">China</option>
+            <option value="UK">UK</option>
+            <option value="USA">USA</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="South Africa"> South Africa</option>
+        </select><br><br>
+
+        <label for="Applying Position">Applying Position</label>
+        <select name="Applying Position" id=" Applying Position">
+            <option value="Frontend Developer">Frontend Developer</option>
+            <option value="Backend Developer"> Backend Developer</option>
+            <option value="Fullstack Developer">Fullstack Developer</option>
+            <option value="Mernstack Developer">Mernstack Developer</option>
+        </select> <br><br>
+
+        <!--Multiple Select-->
+
+        <label for="Skills">Skills You have:</label>
+        <select name="Skills" id="Skills" multiple>
+            <option value="Java">Java</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="MySQL">MySQL</option>
+            <option value="Python">Python</option>
+            <option value="C">C</option>
+        </select><br><br>
+
+
+        <!--option group-->
+
+        <label for="Domain">Domain</label>
+        <select name="Domain" id="Domain">
+            <option value="">Select a Course</option>
+            <optgroup label="UG">
+                <option value="BE">BE-CSE</option>
+                <option value="BTech">BTech-AIDS</option>
+                <option value="BTech">BTech-IT</option>
+                <option value="others">others</option>
+            </optgroup>
+
+            <optgroup label="PG">
+                <option value="M.Sc">M.Sc</option>
+                <option value="MCA">MCA</option>
+                <option value="MSCS">MSCS</option>
+                <option value="others">others</option>
+            </optgroup>
+            
+        </select><br><br>
+
+        
+        <!--check box-->
+        
+        <label for="Subscribe">Are you volunter to doing night shift</label>
+        <input type="checkbox" name="Subscribe" id="Subscribe" value="yes"><br><br>
+
+        </fieldset><br><br>
+
+        <!--Details-->
+
+        <label for="option"> Are you a :</label>
+        <input list="option" name="option" id="option ">
+        <datalist id="option">
+            <option value="Student">
+            <option value="Fresher">
+            <option value="Experienced Person">
+            </datalist><br><br>
+
+
+        <!-- Range -->
+         <label>Enter Your Annual Income:</label>
+         <input type="range" min="0" max="1000000" value="50000"oninput="result.innerHTML='₹'+this.value">
+         <p id="result">₹50000</p> <br><br>
+
+        <!-- Textarea -->
+
+          <label for="message">Any thing you want to ask:</label><br>
+
+          <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+          <!-- Output -->
+           <label>mulitiplication Calculation:</label><br>
+           <input type="number" id="a" value="15"><br>
+           <input type="number" id="b" value="15"><br>
+           <output name="results" for="a b">225</output><br><br>
+
+
+        <!--file input-->
+
+        <label for="resume">Upload Resume</label>
+        <input type="File" name="resume" id="resume">  <br><br><br>
+
+        <!--button-->
+       
+        <input type="submit" name="submit" id="submit">
+        <input type="reset" name="reset" id="reset">
+        <!--Button alert-->
+
+        <button type="button" onclick="alert('Check the details once you filled this form!')"> Click me</button> <br><br>
+
+        
+
+    </form>
+
+    
+    <body>
+        
+    </body>
+</html>
