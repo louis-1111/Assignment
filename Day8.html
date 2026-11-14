@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Box Model Demmonstration</title>
+    <style>
+        h2{
+             text-decoration: underline;
+        }
+        .box{
+            width: 300px;
+            padding: 20px;
+            border: 5px solid green;
+        }
+        div{
+            width: 200px;
+            border:8px solid violet ;
+        }
+        #red{
+            border: 2px solid red;
+        }
+        .padding{
+            padding: 25px;
+            border: 3px solid brown;
+            border-radius: 10px;
+
+        }
+        #leftmrgn{
+            border: 7px solid rgb(7, 133, 145);
+            margin-left: 25px;
+            margin-top: 10px;
+            padding: 5px;
+        }
+
+        #hgtcal{
+           
+            padding: 15px;
+            border: 5px solid rgb(248, 11, 11);
+            
+            height: 50px;
+
+        }
+      
+        #Cal{
+            width: 800px;
+            border: 3px solid rgb(84, 52, 11);
+        }
+        .boxmod{
+            width: 600px;
+            padding: 20px;
+            border: 2px solid;
+            margin: auto;
+            
+        }
+        .btn{
+            width: 600px;
+            padding: 20px;
+            margin: 5px;
+            
+            
+        }
+        #difpad{
+            padding-top:40px ;
+            padding-right: 10px;
+            padding-bottom: 20px;
+            padding-left: 50px;
+             border: 2px solid rgb(84, 52, 11);
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <h1 style="text-align: center;">CSS Box Model Playground</h1>
+        <h2 > <u>CSS Box Model Demonstration</u></h2>
+    </header>
+    <article>
+        <section>
+     <h2>Task 1 – Width, Padding and Border</h2>
+     <h2>Basic Box Model</h2>
+     <div class="box">
+        Welcome to CSS Box Model
+     </div>
+     </section>
+     <hr>
+
+     <section>
+        <h2>Task 2 – Set Width</h2>
+        <h2>uheading: Width Property</h2>
+        <div>
+            My Box is 200px
+        </div>
+
+     </section>
+     <hr>
+
+     <section>
+        <h2>Task 3 – Border Property</h2>
+        <h2>Border Styling</h2>
+        <div id="red">
+            Red Border Box
+        </div>
+
+     </section>
+     <hr>
+
+     <section>
+        <h2>Task 4 – Padding Property</h2>
+        <h2>Internal Spacing</h2>
+     
+     <div class="padding">
+        Paddin Example
+     </div>
+     </section>
+     <hr>
+
+
+     <section>
+        <h2>Task 5 – Margin Property</h2>
+        <h2>External Spacing</h2>
+       <div>
+        Normal Box
+       </div>
+
+        <div id="leftmrgn">
+            Box with left margin
+        </div>
+        </section>
+        <hr>
+
+        <section>
+            <h2>Task 6 – Box Model Formula</h2>
+            <h2>Box Model Calculation</h2>
+            <div id="Cal">
+                <pre>
+                    Total Width =Content Width + Left Padding + Right Padding
+                                +
+                    Left Border + Right Border
+                                +
+                    Left Margin + Right Margin
+                </pre>
+                <br><br>
+
+            </div>
+            <h3>Content</h3>
+                <p>Content: Calculated directly from your set width and height values.</p>
+                <br>
+                <h3>Padding</h3>
+                <p>2.  Calculated by adding left + right padding for width, and top + bottom padding for height.</p>
+                <br>
+                <h3>Border</h3>
+                <p>Calculated by adding left + right border thickness for width, and top + bottom thickness for height.</p>
+                <br>
+                <h3>Margin</h3>
+                <p>Calculated by adding left + right margin for outer width, and top + bottom margin for outer height.</p>
+        </section>
+<hr>
+        <section>
+            <h2>Task 7 - Calculate Total Height</h2>
+            <h2>Height Calculation</h2>
+            <div id="hgtcal">
+                <pre>
+    height: 50px;
+    padding: 15px;
+    border: 5px solid red;
+    
+                </pre>
+                
+            </div>
+
+            <h3>Total Height = 50 + 15 + 15 + 5 + 5</h3>
+        </section><br>
+<hr>
+
+        <section>
+            <h2>Task 8 – Calculate Total Width</h2>
+            <h2>Width Calculation</h2>
+            <pre>
+                width: 300px;
+                padding: 20px;
+                border: 5px solid;
+                margin: 10px;
+                box-sizing: content-box;
+
+                <h3>300 + 20 + 20 + 5 + 5 + 10 + 10 = <b>380px</b></h3>
+            </pre>
+            
+        </section>
+
+        <hr>
+        <section>
+            <h2>Task 9 – Center a Box</h2>
+            <h2>Center Alignment</h2>
+            <div class="boxmod">
+                CSS Box Model - Centered Box
+            </div>
+
+        </section>
+        <hr>
+
+        <section >
+            <h2>Task 10 – Equal-Sized Buttons</h2>
+            <h2>Button Styling</h2>
+            
+            <button type="button" class="btn">HTML</button>
+            <button type="button" class="btn">CSS</button>
+            <button type="button" class="btn" >Javascript</button>
+        
+        </section>
+
+    <hr>
+    <section>
+        <h2>Task 11 – Different Padding on Each Side</h2>
+        <h2>Individual Padding</h2>
+        <section id="difpad">
+            <h3>Observe My Text Position</h3>
+        </section>
+    </section>
+
+     </article> 
+  
+    
+</body>
+</html>

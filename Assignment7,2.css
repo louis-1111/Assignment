@@ -1,0 +1,83 @@
+/* Universal Selector */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Element Selector */
+p {
+    color: #555;
+    line-height: 1.6;
+    margin: 15px;
+}
+
+/* Group Selector */
+h1, h2 {
+    font-family: Arial;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+/* Main Heading */
+h1 {
+    color: darkgreen;
+    background-color: lightyellow;
+    border: 3px solid orange;
+}
+
+/* Sub Headings */
+h2 {
+    color: blue;
+    background-color: aquamarine;
+    border: 2px solid gray;
+}
+
+/* Class Selector - Task 1 */
+.intro {
+    font-style: italic;
+}
+
+/* Class Selector - Task 2 */
+.highlight {
+    background-color: #f0f8ff;
+    padding: 8px;
+    margin: 20px;
+}
+
+/* ID Selector - Task 3 */
+#header {
+    color: #2c3e50;
+    font-size: 32px;
+}
+
+/* Additional Class Selector - Task 4 */
+.box {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 20px;
+}
+
+/* Navigation */
+a {
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* List Styling */
+ul {
+    background-color: rgba(0, 255, 255, 0.25);
+    color: brown;
+    width: 400px;
+    padding: 25px;
+    margin: 20px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: lightgray;
+    padding: 15px;
+}
