@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .head{
+            color: antiquewhite;
+
+        }
+
+
+        .box{
+            display: flex;
+            background-color: brown;
+            flex-direction: row;
+            justify-content: center;
+
+
+        }
+        .box div{
+            width: 100px;
+            flex-direction: row;
+            padding: 20px;
+            line-height: 10px;
+            text-align: center;
+            margin: 10px;
+            background-color:bisque ;
+            gap: 20px;
+
+            
+        }
+
+        nav{
+            background-color: rgb(58, 48, 35);
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 100vh;
+            justify-content: space-evenly;
+
+        }
+
+         nav a{
+            color: aliceblue;
+            text-decoration: none;
+            text-align: center;
+            padding: 15px;
+         }
+            
+     
+        nav a:hover{
+            background: rgb(155, 140, 113);
+            color: black;
+            border-radius: auto;
+        } 
+
+        .vertnav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+         margin: 0;
+         padding: 0;
+         width: 100%;
+         height: auto ;
+            background-color: brown;
+
+        }
+        .vertnav a{
+           display: block;
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+
+      #new{
+        background-color: bisque;
+      }
+
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+
+
+        }
+        .card{
+            flex: 1;
+            background-color: blueviolet;
+            color: bisque;
+            height: 200px;
+            text-align: center;
+            padding: 30px;
+
+        }
+        .card1{
+            flex: 4;
+            background-color: blueviolet;
+            color: bisque;
+            height: 200px;
+            text-align: center;
+            padding: 30px;
+
+        }
+        .card2{
+            flex: 3;
+            background-color: blueviolet;
+            color: bisque;
+            height: 200px;
+            text-align: center;
+            padding: 30px;
+
+        }
+        .card3{
+            flex: 2;
+            background-color: blueviolet;
+            color: bisque;
+            height: 200px;
+            text-align: center;
+            padding: 30px;
+
+            
+            
+        }
+        .container-1{
+            display: flex;
+            height: 300px;
+           align-items:flex-end ;
+           gap: 20px;
+           
+           
+        }
+        .container-1 .box1{
+            height: 200px;
+            background-color: bisque;
+            width: 100px;
+            text-align: center;
+            
+            
+
+        }
+        .container-1 .box2{
+            height: 100px;
+            background-color: blue;
+            
+            width: 100px;
+            text-align: center;
+        }
+        .container-1 .box3{
+            height: 150px;
+            background-color: aquamarine;
+            
+            width: 100px;
+            text-align: center;
+        }
+
+        .row-column{
+            display: flex;
+            gap: 20px;
+            justify-content: stretch;
+            text-align: center;
+            
+
+        }
+        .row-column .first{
+            background-color: blueviolet;
+
+            width: 200px;
+            height: 40vh;
+        }
+        .sec{
+            background-color: greenyellow;
+            width: 200px;
+            height: 40vh;
+        }
+        .third{
+            background-color: cornflowerblue;
+            width: 200px;
+            height: 40vh;
+        }
+        @media (max-width: 600px) {
+    .row-column {
+        flex-direction: column;
+    }
+}
+
+#clr{
+    background-color: rgb(197, 92, 92);
+}
+    .Gallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        
+    }
+    .cards{
+        width: 280px;
+        background-color: rgb(208, 208, 141);
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: 2px 3px 10px gray;
+        transition: transform 0.3s;
+
+    }
+    .cards img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 15px;
+        border: 2px solid white;
+    }
+
+
+    .animls{display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 25px;
+        gap: 20px;
+        justify-content: right;
+
+    
+    }
+    .animls .animls1{
+        width: 280px;
+        background-color: rgb(208, 208, 141);
+        padding: 15px;
+        border-radius: 20px;
+        box-shadow: 2px 3px 10px gray;
+        transition: transform 0.3s;
+        
+        
+        
+
+    }
+
+    .animls .animls1 img{
+        
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 15px;
+        border: 2px solid white;
+        
+
+    }
+
+    .places-1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+    .places-1 .places{
+        width: 280px;
+        padding: 15px;
+        margin: 15px;
+        background-color: bisque;
+        border-radius: 20px;
+        box-shadow:2px 3px 10px gray; ;
+
+
+    }
+    .places-1 .places img{
+        width: 270px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 25px;
+        background-color: brown;
+
+    }
+    
+    
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 class="head">Welcome</h1>
+
+        
+       
+
+    </div>
+
+    <h1>Task-2 Horizontal Navbar</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <h2>Task-3 : Vertical Nav bar</h2>
+    <nav class="vertnav">
+        <a href="#">Dashboard</a>
+        <a href="#">My Profile</a>
+        <a href="#">Course</a>
+        <a href="#">Setting</a>
+        <a href="#">Logout</a>
+
+    </nav>
+
+
+    <h1>Task-4 Card Layout</h1>
+
+
+    <div id="new">
+    <div class="container">
+        <div class="card">HTML</div>
+        <div class="card">Learn HTML</div>
+        <div class="card">Read More</div>
+       
+    </div>
+
+    <div class="container">
+    <div class="card">CSS</div>
+    <div class="card1">Learn CSS</div>
+    <div class="card1">Read more</div>
+    </div>
+
+    <div class="container">
+        <div class="card2">JS</div>
+        <div class="card2">Learn JS</div>
+        <div class="card3">Read More</div>
+        <div class="card3">Practice</div>
+    </div>
+    </div>
+
+    <h1> Task-5 Align items at the bottom </h1>
+    <div class="container-1">
+        <div class="box1">Box1 </div>
+        <div class="box2">Box2</div>
+        <div class="box3"> box3</div>
+
+
+    </div>
+
+    <h1>Task-6 Row to Column</h1>
+    <div class="row-column">
+        <div class="first">Frontend</div>
+        <div  class="sec">Backend</div>
+        <div class="third">Database</div>
+    </div>
+
+    <h1>Task-7 Image Gallery</h1>
+
+    <div  id="clr">
+        
+<h2 style="text-align:center;">Nature</h2>
+    <div class="Gallery">
+        
+        <article class="cards">
+
+        <div><img src="https://picjumbo.com/wp-content/uploads/beautiful-nature-wallpaper-spring-flowers-mountain-sunset-free-image.jpg" alt="Sunset image"></div>
+        <h2>Sunset</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, laudantium eaque alias esse ut nisi libero dolore ducimus placeat inventore, delectus dolores nemo voluptates cumque eligendi atque at eveniet necessitatibus.</p>
+        </article>
+
+        <article class="cards">
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXCsW10nAjoXFTDiXZW7Y-fPj9YPUX0aDKyIj-R9lhYw&s=10" alt="Mountain image"></div>
+        <h2>Mountain</h2>       
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo culpa adipisci veniam eos nostrum, quidem velit error ea ad qui. Tempora corporis quis, aperiam laudantium dolores inventore reprehenderit ipsam assumenda!</p>
+        </article>
+
+        <article class="cards">
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdqshCn03Gr_M0LZSdeY3q2YnagoJf04FwFKfgvdwbrA&s=10" alt="river"></div>
+        <h2>River</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur iusto eaque harum corporis assumenda numquam vero aliquid illum aut minus maxime id a, magni, vel officiis, accusantium laudantium debitis laboriosam!</p>
+        </article>
+
+        <article class="cards">
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScoma6uMJIHWSXoXffgPe0ZoGkP3yVUirVEUou2tSf9w&s=10" alt="Sea"></div>
+            <h2>Sea</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident quos dolore. Aut quisquam repellendus aspernatur qui libero. Nobis eaque blanditiis cupiditate et fugiat magnam quis minus asperiores dolorem dolores.</p>
+        </article>
+    </div>
+    
+
+    
+        <h2 style="text-align: center;">Animals</h2>
+        <div class="animls">
+            <article class="animls1">
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjfs2DUeO8b-NNx0bEDYKYzcliXK4ppIck10XT2ITt4g&s=10" alt="Tiger"></div>
+            <h2>Tiger</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque adipisci illum animi ipsa beatae, magni expedita tempore quis quibusdam nesciunt esse dolore quas exercitationem similique, nemo optio, at nihil laudantium?</p>
+            </article>
+            <article class="animls1">
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwCG7XJUmnMQSQl9c141Qmlo680lT24mZNw85UNmSoOg&s=10" alt="Fox"></div>
+            <h2>Fox</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, quam animi architecto debitis laborum molestias illo possimus perspiciatis omnis voluptate expedita id sunt libero vero. Consequuntur eum nam eaque incidunt?</p>
+            </article>
+
+            <article class="animls1">
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8g4_fvdtnWsRUAI1Pmlw4_VtPKcYhpsKN5hw9T_zoSg&s=10" alt="Lion"></div>
+            <h2>Lion</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, in, voluptate sit alias natus debitis consectetur ipsa quisquam asperiores accusantium recusandae corrupti nesciunt sint mollitia numquam omnis quis quae voluptates.</p>
+            </article>
+    </div>
+    <br><br>
+
+    <h2 style="text-align: center;">Places</h2>
+
+    <div class="places-1">
+ 
+            
+
+            <article class="places">
+                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCg95hhWhCnU2y-j7NooUWXabUw-YmT_-G28jCtFZg2g&s=10" alt="Eiffel Tower"></div>
+                <h2>Eiffell Tower</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae ad totam aperiam. Temporibus assumenda minus, numquam natus accusamus quas explicabo consequatur, libero quisquam dignissimos porro sapiente aperiam ut voluptatibus laudantium.</p>
+            </article>
+
+            <article class="places">
+                <div> <img src="https://lostontheroute.com/wp-content/uploads/2025/02/taj-mahal-by-night.jpg" alt="Tajmahal"></div>
+                <h2>Tajmahal</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, aliquam neque ipsam impedit quibusdam consequuntur a facilis dignissimos omnis alias temporibus, quae ducimus unde fugit voluptate odio at est! Est.</p>
+            </article>
+
+            <article class="places">
+                <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKLD5RLAz7XPPo70AukDGI9nV9DWpL1TmK0q_uzhSyHQ&s=10" alt="China Wall"></div>
+                <h2>China Wall</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quidem cumque vero aperiam, rerum velit a corporis? Et pariatur numquam distinctio, fugit nisi quis praesentium omnis provident laboriosam ab culpa.</p>
+            </article>
+       
+
+</div>
+    </div>
+
+
+
+
+
+    
+</body>
+</html>
