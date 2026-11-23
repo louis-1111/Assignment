@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        console.log("--------------Task-1  Do all loop programs using Functions.---------------")
+        function forloop(){
+            let a=0;
+            for(let i=0;i<=10;i++){
+                a+=i;
+                
+            }
+            console.log(a);
+        }
+        forloop();
+
+        function  facloop(a1,b){
+            let i1=1;
+            while(i1<=b){
+                
+                a1*=i1;
+                i1++;
+            }
+            return a1;
+        }console.log(facloop(1,5));
+
+        function primeno (num){
+
+            let count=0;
+            for(let i2=1;i2<=num;i2++){
+                if(num %i2 === 0)
+                count++;                   
+            }
+                    if(count===2){
+            console.log("prime number");
+                    }
+        
+        else{
+            console.log("this is not prime number")
+        }
+    }
+        
+        primeno(11);
+        primeno(12);
+
+        function armno(){
+
+        let x=parseInt(prompt("Enter the number"));
+        let temp=x;
+        let sum=0;
+        for(let j=x;j>0;j=parseInt(j/10)){
+           let  rem = j%10;
+            sum += rem*rem*rem;
+        }
+    
+        if(temp === sum)
+        console.log("amstrong num");
+        else
+        console.log("not armstrong num");
+
+    }
+        armno();
+
+        function fibonacci(n) {
+            let a4 = 0;
+            let b4 = 1;
+            for (let i3 = 0; i3 < n; i3++) {
+                console.log(a4);
+                let next = a4 + b4;
+                a4 = b4;
+                b4 = next;
+            }
+        }
+        
+        fibonacci(8);        
+
+        function table(n1){
+            for(let e=1; e <= n1 ;e++){
+                console.log(`5 x ${e} = ${e * 5}`);
+            }
+
+        }
+        table(10);
+
+        console.log("-----------Task-2 Do all loop programs using Arrow function.---------------- ");
+
+        <!---For loop-->
+        let fact=num2 =>{
+            let ft=1;
+            for( let ii=1;ii<=num2;ii++){
+                ft*=ii;            }
+                return ft;
+        }
+        console.log(fact(5));
+
+        let addn=num3 =>{
+            let adsum=0;
+            for(let i4 =1;i4<=num3;i4++){
+                adsum+=i4;
+            }
+                return adsum; 
+
+        }
+        console.log(addn(5));
+
+        let prim=newpri =>{
+            let pri=1;
+            let cnt=0;
+            while(pri<=newpri){
+               
+                if(newpri%pri==0)
+                cnt++;
+
+                 pri++;
+            }
+            if(cnt===2)
+            console.log("its prime");
+        else 
+        console.log("its not prime");
+        }
+        prim(10);
+        prim(13);
+
+        let arms=newarms=>{
+            let temp1=newarms;
+            let ams=0;
+            for(let i6=newarms;i6>0; i6=parseInt(i6/10)){
+                let remainder=i6%10;
+                ams += remainder*remainder*remainder;
+            }
+            if(temp1===ams){
+                console.log("its arm num")
+            }
+            else{
+                console.log("its not prime " )
+            }
+        }
+        arms(153);
+
+        let tab=newtab=>{
+            for(i7=1;i7<=newtab;i7++){
+                console.log(`5 x {i7} = ${ i7*5}`);
+
+            }
+
+        }
+        tab(10);
+        
+        const fibo = (n) => {
+            let a5 = 0;
+            let b5 = 1;
+            for (let i8 = 0; i8 < n; i8++) {
+                console.log(a5);
+                let next = a5 + b5;
+                a5 = b5;
+                b5 = next;
+            }
+        }
+            fibo(8); 
+
+
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body> 
+</html>
