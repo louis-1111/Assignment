@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log("---- Task-1.Write a js program to Add an Element in an Array.------")
+
+        let a = [1,2,3,4,5,6];
+        console.log(a.push(7));
+        console.log(a);
+
+        console.log("-----------Task-2.Write a js program to Remove the Last Element.---------");
+        console.log(a.pop());
+        console.log(a);
+
+        console.log("------------Task-3.Write a js program to Add an Element at the Beginning.--------------")
+
+        console.log(a.unshift(0));
+        console.log(a);
+
+        console.log("-----------Task-4.Write a js program to Remove the First Element.------------")
+        console.log(a.shift());
+        console.log(a);
+
+        console.log("-----------------Task-5.Write a js program to Display All Elements.----------------")
+        let name=["qa","se","db"];
+        for(let names of name){
+            console.log(names);
+        }
+
+        console.log("---------for each--------------")
+
+        name.forEach(function(name1){
+            console.log(name1);
+        })
+
+        console.log("---------Task-6.Write a js program to Find the Sum of Array Elements.-------------")
+
+        let number=[1,2,3,4,5];
+        let sum=0;
+
+        for(let i=0;i<number.length;i++){
+            sum += number[i];
+        }console.log(sum);
+
+        console.log("-------------Task-7.Write a js program to Find the Largest Number in an Array.----------------")
+
+        let gr=number.reduce((a,b)=>a>b ? a:b);
+        console.log(gr);
+
+        console.log("-------------Task-8.Write a js program to Count Even and Odd Numbers.-------------------")
+
+        let oddcount=number.filter(num2 => num2% 2 ===0).length;
+        let evencount=number.filter(num2 => num2%2 !==0).length;
+        console.log(oddcount);
+        console.log(evencount);
+
+        console.log("------------Task-9.Write a js program toPrint Array Elements in Reverse Order.-----------------")
+
+        console.log(number.reverse());
+
+        console.log("-------------Task-10.Write a js program to Search for an Element in an Array.----------------")
+
+        let targt=3;
+        let val= number.find(item =>item=== targt);
+        if(val !== undefined)
+        console.log(number.indexOf(targt));
+    else
+    console.log(targt + " not found in array");
+
+
+
+        
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
